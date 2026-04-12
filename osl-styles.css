@@ -5,7 +5,7 @@
 }
 
 html{
-    /* scroll-padding-top: 160px; */
+    scroll-padding-top: 20px;
     scroll-behavior: smooth !important;
 }
 
