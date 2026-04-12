@@ -26,7 +26,7 @@ body{
 header{
     background-color: var(--negro);
     color: var(--blanco);
-    position: fixed;
+    /* position: fixed; */
     top:0;
     width: 100%;
     z-index:1000;
