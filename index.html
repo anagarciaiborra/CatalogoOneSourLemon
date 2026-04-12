@@ -8,6 +8,9 @@
 
     <link rel="stylesheet" href="osl-styles.css">
 
+    <link rel="icon" type="image/webp" href="img/favicon.webp">
+    <link rel="apple-touch-icon" href="img/favicon.webp">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
@@ -18,7 +21,7 @@
 <body>
     
     <header>
-        <!-- Insertar logo OSL -->
+        <img src="img/icono2.webp" alt="logo de One Sour Lemon">
         <nav><ul>
             <li><a href="#pegatinas">Pegatinas</a></li>
             <li><a href="#llaveros">Pins y Llaveros</a></li>
@@ -28,7 +31,7 @@
 
     <div class="separador"></div>
 
-    <div class="hero">
+    <div id="hero">
         <h1>???</h1>
     </div>
 
@@ -38,7 +41,7 @@
         <div class="grid-productos">
             <label class="prod">
                 <input type="checkbox" value="Pegatina Paso que Voy Ardiendo">
-                <img src="img/1.sm.webp">
+                <img src="img/pegatinas1/pegatina-paso-que-voy-ardiendo.webp" alt="pegatina de la escena de los simpson cuando visitan una siderúrgica gay">
                 <div class="info">
                     <span>Paso que voy ardiendo!</span>
                     <strong>1.00€</strong>
@@ -46,7 +49,7 @@
             </label>
             <label class="prod">
                 <input type="checkbox" value="Pegatina Pa' loca tú, calva!">
-                <img src="img/1.sm.webp">
+                <img src="img/pegatinas1/pegatina-pa-loca-tu-calva.webp" alt="pegatina de la escena de los simpsons en la que visitan una siderúrgica gay y Homer les dice que están todos locos">
                 <div class="info">
                     <span>Pa' loca tú, calva!</span><br>
                     <strong>1.00€</strong>
@@ -54,39 +57,77 @@
             </label>
             
             <label class="prod">
-                <input type="checkbox" value="Pegatina Paso que Voy Ardiendo">
-                <img src="img/1.sm.webp">
+                <input type="checkbox" value="Pegatina Lisa hippie">
+                <img src="img/pegatinas1/pegatina-lisa-hippie.webp" alt="pegatina de Lisa Simpson cuando viste de manera hippie o cool">
                 <div class="info">
-                    <span>Paso que voy ardiendo!</span><br>
+                    <span>Lisa, total, ya sabes</span><br>
                     <strong>1.00€</strong>
                 </div>
             </label>
             <label class="prod">
-                <input type="checkbox" value="Pegatina Pa' loca tú, calva!">
+                <input type="checkbox" value="Pegatina Mamá se llevó las pilas">
                 <img src="img/1.sm.webp">
                 <div class="info">
-                    <span>Pa' loca tú, calva!</span><br>
+                    <span>Mamá caradura</span><br>
                     <strong>1.00€</strong>
                 </div>
             </label>
 
             <label class="prod">
-                <input type="checkbox" value="Pegatina dragón de corazón roto">
-                <img src="img/1.sm.webp">
+                <input type="checkbox" value="Pegatina Dragón de corazón roto">
+                <img src="img/pegatinas1/pegatina-hoombre-que-rompio-el-corazon-a-un-dragon.webp" alt="pegatina de la escena en la que la familia simpson visita china y hay dragones cantando junto al avión">
                 <div class="info">
-                    <span>Dragón de cprazón roto</span><br>
+                    <span>Dragón de corazón roto</span><br>
                     <strong>1.00€</strong>
                 </div>
             </label>
             <label class="prod">
-                <input type="checkbox" value="Pegatina Como si no llevara nada">
+                <input type="checkbox" value="Pegatina Mamá se llevó las pilas">
                 <img src="img/1.sm.webp">
                 <div class="info">
-                    <span>Como si no llevara nada...</span><br>
+                    <span>HOMER NOVIA</span><br>
                     <strong>1.00€</strong>
                 </div>
             </label>
 
+
+
+
+
+
+
+<!-- PACKS DE PEGATINAS ----------------------------------------------- -->
+            <label class="prod">
+                <input type="checkbox" value="Pack Panda Tope">
+                <img src="img/pegatinas1/pegatina-pack-panda-tope.webp" alt="pack de cuatro pegatinas de Panda tope, banda formada por Bart Simpson, Milhouse, Nelson y Ralph">
+                <div class="info">
+                    <span>Panda Tope gobierna el mundo</span><br>
+                    <strong>2.50€</strong>
+                </div>
+            </label>
+            <label class="prod">
+                <input type="checkbox" value="Pack pelucas">
+                <img src="img/pegatinas1/pegatina-pelucas.webp" alt="pegatina de la escena de la serie en la que Bart, Milhouse, Nelson y Martin llevan pelucas de colores">
+                <div class="info">
+                    <span>Pelucas</span><br>
+                    <strong>2.50€</strong>
+                </div>
+            </label><label class="prod">
+                <input type="checkbox" value="Pack Homer y Marge">
+                <img src="img/pegatinas1/pegatina-pack-marge-homer.webp" alt="pegatina marge y homer bailando y comiendo en el coche">
+                <div class="info">
+                    <span>Homer y Marge</span><br>
+                    <strong>1.50€</strong>
+                </div>
+            </label>
+            <label class="prod">
+                <input type="checkbox" value="Pack aliens">
+                <img src="img/1.sm.webp">
+                <div class="info">
+                    <span>kang y Kodos</span><br>
+                    <strong>1.50€</strong>
+                </div>
+            </label>
 
 
 
@@ -104,6 +145,7 @@
                 <img src="img/llaveros/llavero-sr-burns-alien.webp" alt="llavero que brilla en la oscuridad de la escena en la que el Sr. Burns se transforma en alienígena">
                 <div class="info">
                     <span>Os traigo amor!</span><br>
+                    <span class="extra"><i class="fa-solid fa-star"></i> Brilla en la oscuridad <i class="fa-solid fa-star"></i></span><br>
                     <strong>7.00€</strong>
                 </div>
             </label>
@@ -112,6 +154,7 @@
                 <img src="img/llaveros/llavero-lisa-soy-la-reina-de-los-lagartos.webp" alt="llavero de la escena en la que Lisa Simpson dice ser la Reina de los Lagartos">
                 <div class="info">
                     <span>La Reina de los Lagartos!</span><br>
+                    <span class="extra"><i class="fa-solid fa-star"></i> Efecto  Arcoíris <i class="fa-solid fa-star"></i></span><br>
                     <strong>7.00€</strong>
                 </div>
             </label>
@@ -167,6 +210,17 @@
 
     </section>
 
+
+
+
+
+    <div class="arriba">
+        <span><a href="#hero"><i class="fa-solid fa-arrow-up"></i></a></span>
+    </div>
+
+    <div class="whatsapp">
+        <p><a href="#"><i class="fa-brands fa-whatsapp"></i> Enviar selección</a></p>
+    </div>
 
 
 </body>

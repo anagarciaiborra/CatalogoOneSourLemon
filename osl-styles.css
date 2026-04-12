@@ -5,7 +5,7 @@
 }
 
 html{
-    scroll-padding-top: 180px;
+    scroll-padding-top: 160px;
     scroll-behavior: smooth !important;
 }
 
@@ -29,16 +29,28 @@ header{
     position: fixed;
     top:0;
     width: 100%;
+    z-index:1000;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header img{
+    text-align: center;
+    width: 250px;
+    margin-top: 20px;
 }
 
 header ul{
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0;
     text-align: center;
     align-items: center;
     width:100%;
+    margin:0;
 }
 
 header ul li{
@@ -46,7 +58,7 @@ header ul li{
 }
 
 header ul li a{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
     font-weight: 800;
     text-decoration: none;
@@ -95,7 +107,7 @@ h2{
 .prod img{
     width: 100%;
     border-radius: 12px;
-    border: 3px solid transparent;
+    border: 5px solid transparent;
     transition: 0.3s;
 }
 
@@ -115,4 +127,75 @@ h2{
 
 strong{
     font-size: 1.2rem;
+}
+
+.extra{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.info i{
+    font-size: 0.5rem;
+}
+
+
+
+
+/* BOTONES ABAJO PANTALLA ------------------------------------------ */
+.arriba{
+    background-color: var(--negro);
+    color:var(--blanco);
+    padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    border-radius: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arriba a, .whatsapp a{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+.arriba a:hover, .whatsapp a:hover{
+    color:var(--osl);
+}
+
+.whatsapp{
+    background-color: var(--negro);
+    color:var(--blanco);
+    height:2.2rem;
+    position: fixed;
+    z-index: 1000;
+    bottom: 20px;
+    padding: 5px 10px;
+    display:flex;
+    align-items: center;
+    justify-self: center;
+    border-radius: 10px;
+    margin:auto;
+}
+
+
+
+
+/* RESPONSIVE ------------------------------------------------------------- */
+
+@media screen and (min-width: 700px){
+    .prod{
+    width: calc(25% - 7.5px);
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .prod{
+    width: calc(20% - 7.5px);
+    }
 }
