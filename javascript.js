@@ -17,7 +17,7 @@ function enviarPedidoWhatsApp() {
         total += precio;
     });
 
-    mensaje += `\n💰 *TOTAL ESTIMADO: ${total.toFixed(2)}€*`;
+    mensaje += `\n*TOTAL ESTIMADO: ${total.toFixed(2)}€*`;
     
     const urlFinal = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
     
