@@ -7,57 +7,84 @@
 html{
     scroll-padding-top: 20px;
     scroll-behavior: smooth !important;
+    overflow-x: hidden; /* Prohibido el scroll horizontal en la raíz */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    touch-action: pan-y;
 }
 
 *{
     font-family: "Outfit", sans-serif;
+    box-sizing: border-box;
 }
 
 body{
-    margin:0;
     background-color: var(--blanco);
     box-sizing: border-box;
-    width:100%;
     min-height: 100vh;
+    max-width: 100vw;   /* No puede ser más ancho que la ventana visual */
+    margin: 0;
+    padding: 0;
+    position: relative;
 }
 
 /* ESTILOS ----------------------------------------------- */
 /* HEADER ----------------------- */
-header{
+header {
     background-color: var(--negro);
-    color: var(--blanco);
-    /* position: fixed; */
-    /* top:0;
     width: 100%;
-    z-index:1000; */
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-header img{
+    margin: 0;
+    padding: 0;
+    display: block;
     text-align: center;
-    width: 250px;
-    margin-top: 20px;
 }
 
-header ul{
+.logo {
+    width: 100%;
+    padding: 10px 0;
+    display: block;
+}
+
+header img {
+    max-width: 150px; 
+    width: 80%;      
+    height: auto;
+    padding-top: 10px;
+    display: inline-block;
+}
+
+.nav-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;         
+    width: 100%;
+    background-color: var(--negro);
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 0;
     text-align: center;
     align-items: center;
     width:100%;
     margin:0;
+    gap: 25px;
+    padding-bottom: 15px;
 }
 
-header ul li{
-    padding: 15px;
+nav ul li{
+    padding-top: 15px;
+    
 }
 
-header ul li a{
+nav ul li a{
     font-size: 1.1rem;
     text-transform: uppercase;
     font-weight: 800;
@@ -66,7 +93,7 @@ header ul li a{
     text-align: center;
 }
 
-header ul li a:active{
+nav ul li a:active{
     color: var(--osl);
 }
 
@@ -88,20 +115,23 @@ h2{
 
 .grid-productos{
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     gap: 15px;
     row-gap: 30px;
-    padding:15px;
+    padding: 15px; /* El aire a los lados */
     justify-content: center;
-    width:calc(100% - 35px);
+    width: 95%;   /* Ocupa todo el ancho disponible */
+    box-sizing: border-box; /* 👈 CRUCIAL: mete el padding DENTRO del 100% */
     margin-bottom: 50px;
+    max-width: 100vw;
 }
 
 .prod{
-    width: calc(50% - 7.5px);
+    width: calc(50% - 7.5px); 
     display: flex;
     flex-direction: column;
-    cursor:pointer;
+    cursor: pointer;
+    box-sizing: border-box;
 }
 
 .prod img{
@@ -151,7 +181,7 @@ strong{
     padding: 10px;
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 30px;
     z-index: 1000;
     border-radius: 10px;
     display:flex;
