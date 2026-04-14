@@ -105,10 +105,12 @@ h2{
 }
 
 .prod img{
-    width: 100%;
     border-radius: 12px;
     border: 5px solid transparent;
     transition: 0.3s;
+    aspect-ratio: 2/3;
+    width: 100%;
+    object-fit: cover;
 }
 
 .prod input:checked + img{
