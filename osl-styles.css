@@ -414,3 +414,15 @@ strong{
     width: calc(20% - 7.5px);
     }
 }
+
+@media screen and (max-width: 450px){
+        .tres-col{
+        display:inline-block;
+        padding: 20px auto;
+    }
+
+    .col{
+        width:80%;
+        margin: 10%;
+    }
+}
