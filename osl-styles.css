@@ -76,7 +76,7 @@ nav ul{
     align-items: center;
     width:100%;
     margin:0;
-    gap: 25px;
+    gap: 15px;
     padding-bottom: 15px;
 }
 
@@ -86,7 +86,7 @@ nav ul li{
 }
 
 nav ul li a{
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     font-weight: 800;
     text-decoration: none;
@@ -279,7 +279,7 @@ strong{
     width: 50px;
     position: fixed;
     bottom: 20px;
-    right: 30px;
+    right: 10px;
     z-index: 1000;
     border-radius: 50px;
     display:flex;
