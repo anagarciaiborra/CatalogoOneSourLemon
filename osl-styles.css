@@ -275,8 +275,8 @@ strong{
 .arriba{
     background-color: var(--negro);
     color:var(--blanco);
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     position: fixed;
     bottom: 20px;
     right: 10px;
@@ -329,7 +329,7 @@ strong{
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    height:70px !important;
+    height:50px !important;
     background-color: var(--negro);
     border-radius: 25px 25px 0 0 !important;
     padding: 15px !important;
