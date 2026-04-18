@@ -26,15 +26,27 @@
         <ul>
             <li><a href="#pegatinas">Pegatinas</a></li>
             <li><a href="#llaveros">Llaveros</a></li>
+            <li><a href="#laminas">Láminas</a></li>
             <li><a href="#textil">Textil</a></li>
         </ul>
     </nav>
 
-
-    <div class="separador"></div>
-
     <div class="hero">
-        <h1>???</h1>
+        <h1>Catálogo</h1>
+        <div class="tres-col">
+            <div class="col">
+                <h2>1.</h2>
+                <p><strong>Selecciona</strong> los productos que te gusten</p>
+            </div>
+            <div class="col">
+                <h2>2.</h2>
+                <p><strong>Envíanoslos por whatsapp</strong> usando el enlace de abajo</p>
+            </div>
+            <div class="col">
+                <h2>3.</h2>
+                <p><strong>¡Listo!</strong><br>¡Te guardaremos los productos para que los recojas cuando puedas!</p>
+            </div>
+        </div>
     </div>
 
 
@@ -42,7 +54,7 @@
         <h2>Pegatinas</h2>
         <div class="grid-productos">
             <label class="prod">
-                <input type="checkbox" value="Pegatina Paso que Voy Ardiendo" data-precio="1.00€" class="check-prod">
+                <input type="checkbox" value="Pegatina Paso que Voy Ardiendo" data-precio="1.00" class="check-prod" onchange="actualizarContador()" onchange="actualizarContador()">
                 <img src="img/peg/ardiendo.webp" alt="pegatina de la escena de los simpson cuando visitan una siderúrgica gay">
                 <div class="info">
                     <span>Paso que voy ardiendo!</span>
@@ -50,7 +62,7 @@
                 </div>
             </label>
             <label class="prod">
-                <input type="checkbox" value="Pegatina Pa' loca tú, calva!" data-precio="1.00€" class="check-prod">
+                <input type="checkbox" value="Pegatina Pa' loca tú, calva!" data-precio="1.00" class="check-prod" onchange="actualizarContador()">
                 <img src="img/peg/calva.webp" alt="pegatina de la escena de los simpsons en la que visitan una siderúrgica gay y Homer les dice que están todos locos">
                 <div class="info">
                     <span>Pa' loca tú, calva!</span><br>
@@ -59,7 +71,7 @@
             </label>
             
             <label class="prod">
-                <input type="checkbox" value="Pegatina Lisa hippie" data-precio="1.00€" class="check-prod">
+                <input type="checkbox" value="Pegatina Lisa hippie" data-precio="1.00" class="check-prod" onchange="actualizarContador()">
                 <img src="img/peg/lisa.webp" alt="pegatina de Lisa Simpson cuando viste de manera hippie o cool">
                 <div class="info">
                     <span>Lisa, total, ya sabes</span><br>
@@ -67,7 +79,7 @@
                 </div>
             </label>
             <label class="prod">
-                <input type="checkbox" value="Pegatina Mamá se llevó las pilas" data-precio="1.00€" class="check-prod">
+                <input type="checkbox" value="Pegatina Mamá se llevó las pilas" data-precio="1.00" class="check-prod" onchange="actualizarContador()">
                 <img src="img/peg/pilas.webp" alt="pegatina de la escena en la que Homer culpa a Marge de llevarse las pilas del mando a distancia">
                 <div class="info">
                     <span>Mamá caradura</span><br>
@@ -76,7 +88,7 @@
             </label>
 
             <label class="prod">
-                <input type="checkbox" value="Pegatina Dragón de corazón roto" data-precio="1.00€" class="check-prod">
+                <input type="checkbox" value="Pegatina Dragón de corazón roto" data-precio="1.00" class="check-prod" onchange="actualizarContador()">
                 <img src="img/peg/dragon.webp" alt="pegatina de la escena en la que la familia simpson visita china y hay dragones cantando junto al avión">
                 <div class="info">
                     <span>Dragón de corazón roto</span><br>
@@ -84,7 +96,7 @@
                 </div>
             </label>
             <label class="prod">
-                <input type="checkbox" value="Pegatina Homer Novia" data-precio="1.00€" class="check-prod">
+                <input type="checkbox" value="Pegatina Homer Novia" data-precio="1.00" class="check-prod" onchange="actualizarContador()">
                 <img src="img/peg/novia.webp" alt="Pegatina de homer vestido con el traje de novia de marge">
                 <div class="info">
                     <span>HOMER NOVIA</span><br>
@@ -93,7 +105,7 @@
             </label>
 
             <label class="prod">
-                <input type="checkbox" value="Pegatina Como si no llevara nada" data-precio="1.00€" class="check-prod">
+                <input type="checkbox" value="Pegatina Como si no llevara nada" data-precio="1.00" class="check-prod" onchange="actualizarContador()">
                 <img src="img/peg/flanders.webp" alt="Pegatina de Flanders vestido con traje de esquí marcando culo">
                 <div class="info">
                     <span>Como si no llevara nada...</span><br>
@@ -101,15 +113,15 @@
                 </div>
             </label>
             <label class="prod">
-                <input type="checkbox" value="Pegatina Mr. Crocket" data-precio="1.00€" class="check-prod">
+                <input type="checkbox" value="Pegatina Mr. Croquet" data-precio="1.00" class="check-prod" onchange="actualizarContador()">
                 <img src="img/peg/croket.webp" alt="Pegatina de homer como logo de detergente">
                 <div class="info">
-                    <span>Mr. Crocket</span><br>
+                    <span>Mr. Croquet</span><br>
                     <strong>1.00€</strong>
                 </div>
             </label>
             <label class="prod">
-                <input type="checkbox" value="Pegatina Eres muy chu-chu-chuli" data-precio="1.00€" class="check-prod">
+                <input type="checkbox" value="Pegatina Eres muy chu-chu-chuli" data-precio="1.00" class="check-prod" onchange="actualizarContador()">
                 <img src="img/peg/chuli.webp" alt="Pegatina de la tarjeta que hace lisa a ralph en san valentín">
                 <div class="info">
                     <span>¡Eres muy chu-chu-chuli!</span><br>
@@ -117,7 +129,7 @@
                 </div>
             </label>
             <label class="prod">
-                <input type="checkbox" value="Pegatina Mocasines Saltarines" data-precio="1.00€" class="check-prod">
+                <input type="checkbox" value="Pegatina Mocasines Saltarines" data-precio="1.00" class="check-prod" onchange="actualizarContador()">
                 <img src="img/peg/mocasines.webp" alt="Pegatina del señor burns cantando Mocasines saltarines">
                 <div class="info">
                     <span>Mocasines salarines</span><br>
@@ -125,7 +137,7 @@
                 </div>
             </label>
             <label class="prod">
-                <input type="checkbox" value="Pegatina Juego con mi melocotonero" data-precio="1.00€" class="check-prod">
+                <input type="checkbox" value="Pegatina Juego con mi melocotonero" data-precio="1.00" class="check-prod" onchange="actualizarContador()">
                 <img src="img/peg/melocoronero.webp" alt="Pegatina de lisa bailando con un melocotonero">
                 <div class="info">
                     <span>Juego con mi melocotonero</span><br>
@@ -135,35 +147,35 @@
 
 
             <label class="prod">
-                <input type="checkbox" value="Pegatina Maggie Spears" data-precio="1.00€" class="check-prod">
+                <input type="checkbox" value="Pegatina Maggie Spears" data-precio="1.00" class="check-prod" onchange="actualizarContador()">
                 <img src="img/peg/maggie.webp" alt="Pegatina de Maggie bailando Britney Spears">
                 <div class="info">
                     <span>Maggie Spears</span><br>
                     <strong>1.00€</strong>
                 </div>
             </label><label class="prod">
-                <input type="checkbox" value="Pegatina Hank Scorpio" data-precio="1.00€" class="check-prod">
+                <input type="checkbox" value="Pegatina Hank Scorpio" data-precio="1.00" class="check-prod" onchange="actualizarContador()">
                 <img src="img/peg/scorpio.webp" alt="Pegatina de Hank Scorpio con un lanzallamas">
                 <div class="info">
                     <span>Hank Scorpio</span><br>
                     <strong>1.00€</strong>
                 </div>
             </label><label class="prod">
-                <input type="checkbox" value="Pegatina Homer seto" data-precio="1.00€" class="check-prod">
+                <input type="checkbox" value="Pegatina Homer seto" data-precio="1.00" class="check-prod" onchange="actualizarContador()">
                 <img src="img/peg/homer-seto.webp" alt="Pegatina de homer metiendose en un seto">
                 <div class="info">
                     <span>Homer y arbustos***</span><br>
                     <strong>1.00€</strong>
                 </div>
             </label><label class="prod">
-                <input type="checkbox" value="Pegatina Marge baile" data-precio="1.00€" class="check-prod">
+                <input type="checkbox" value="Pegatina Marge baile" data-precio="1.00" class="check-prod" onchange="actualizarContador()">
                 <img src="img/peg/marge-baile.webp" alt="Pegatina de Marge Simpsons bailando">
                 <div class="info">
                     <span>Marge Baile ***</span><br>
                     <strong>1.00€</strong>
                 </div>
             </label><label class="prod">
-                <input type="checkbox" value="Pegatina Canteros" data-precio="1.00€" class="check-prod">
+                <input type="checkbox" value="Pegatina Canteros" data-precio="1.00" class="check-prod" onchange="actualizarContador()">
                 <img src="img/peg/cantero.webp" alt="Pegatina de Homer vestido de cantero">
                 <div class="info">
                     <span>Canteros***</span><br>
@@ -174,7 +186,7 @@
 
 
             <label class="prod">
-                <input type="checkbox" value="Pegatina Demonio" data-precio="1.00€" class="check-prod">
+                <input type="checkbox" value="Pegatina Demonio" data-precio="1.00" class="check-prod" onchange="actualizarContador()">
                 <img src="img/peg/demonio.webp" alt="Pegatina de Homer vestido de demonio">
                 <div class="info">
                     <span>Homer Demonio***</span><br>
@@ -182,7 +194,7 @@
                 </div>
             </label>
                 </label><label class="prod">
-                <input type="checkbox" value="Pegatina Canteros" data-precio="1.00€" class="check-prod">
+                <input type="checkbox" value="Pegatina Canteros" data-precio="1.00" class="check-prod" onchange="actualizarContador()">
                 <img src="img/peg/homer-gordo.webp" alt="Pegatina de Homer extra gordo">
                 <div class="info">
                     <span>Homer Gordo</span><br>
@@ -190,7 +202,7 @@
                 </div>
             </label>
             </label><label class="prod">
-                <input type="checkbox" value="Pegatina Mr. Quitanieves" data-precio="1.00€" class="check-prod">
+                <input type="checkbox" value="Pegatina Mr. Quitanieves" data-precio="1.00" class="check-prod" onchange="actualizarContador()">
                 <img src="img/peg/quitanieves.webp" alt="Pegatina de Homer vestido de Mr. Quitanieves">
                 <div class="info">
                     <span>Mt. Quitanieves</span><br>
@@ -199,7 +211,7 @@
             </label>
 
             </label><label class="prod">
-                <input type="checkbox" value="Pegatina la Reina de los Lagartos" data-precio="1.00€" class="check-prod">
+                <input type="checkbox" value="Pegatina la Reina de los Lagartos" data-precio="1.00" class="check-prod" onchange="actualizarContador()">
                 <img src="img/peg/lagartos.webp" alt="Pegatina de Lisa en el momento en que cae al río en un parque de atracciones y se emborracha">
                 <div class="info">
                     <span>¡La Reina de los Lagartos!</span><br>
@@ -207,7 +219,7 @@
                 </div>
             </label>
             </label><label class="prod">
-                <input type="checkbox" value="Pegatina Lisa estrés" data-precio="1.00€" class="check-prod">
+                <input type="checkbox" value="Pegatina Lisa estrés" data-precio="1.00" class="check-prod" onchange="actualizarContador()">
                 <img src="img/peg/ataque.webp" alt="Pegatina de Lisa Simpson estresada">
                 <div class="info">
                     <span>Lisa Estrés***</span><br>
@@ -216,16 +228,104 @@
             </label>
 
 
+        
+            </label><label class="prod">
+                <input type="checkbox" value="Pegatina Ensalada" data-precio="1.00" class="check-prod" onchange="actualizarContador()">
+                <img src="img/peg/ensalada.webp" alt="Pegatina de la familia simpson bailando">
+                <div class="info">
+                    <span>No conquistas nada</span><br>
+                    <strong>1.00€</strong>
+                </div>
+            </label>
+            </label><label class="prod">
+                <input type="checkbox" value="Pegatina Sin tele y sin cerveza..." data-precio="1.00" class="check-prod" onchange="actualizarContador()">
+                <img src="img/peg/resplanor.webp" alt="Pegatina de Homer en la escena en la que pierde la cabeza en referencia a la pelicula del resplandor">
+                <div class="info">
+                    <span>Sin tele y sin cerevza...</span><br>
+                    <strong>1.00€</strong>
+                </div>
+            </label>
+            </label><label class="prod">
+                <input type="checkbox" value="Pegatina Lisa incrédula" data-precio="1.00" class="check-prod" onchange="actualizarContador()">
+                <img src="img/peg/lisa-incredulidad.webp" alt="Pegatina de Lisa Simpson con cara de incredulidad como en el meme">
+                <div class="info">
+                    <span>Lisa Incrédula***</span><br>
+                    <strong>1.00€</strong>
+                </div>
+            </label>
+            </label><label class="prod">
+                <input type="checkbox" value="Pegatina Voy a matar a Moe" data-precio="1.00" class="check-prod" onchange="actualizarContador()">
+                <img src="img/peg/matar-moe.webp" alt="Pegatina de Homer montado sobre un carrito gritando que va a matar a moe">
+                <div class="info">
+                    <span>Voy a matar a Moe...</span><br>
+                    <strong>1.00€</strong>
+                </div>
+            </label>
+            </label><label class="prod">
+                <input type="checkbox" value="Pegatina Coyote espacial" data-precio="1.00" class="check-prod" onchange="actualizarContador()">
+                <img src="img/peg/zorro.webp" alt="Pegatina del zorro que ayuda a homer cuando está drogado con un chile">
+                <div class="info">
+                    <span>Coyote espacial</span><br>
+                    <strong>1.00€</strong>
+                </div>
+            </label>
+            </label><label class="prod">
+                <input type="checkbox" value="Pegatina Maggie navaja" data-precio="1.00" class="check-prod" onchange="actualizarContador()">
+                <img src="img/peg/maggie-navaja.webp" alt="Pegatina de Maggie amenazante sosteniendo una navaja">
+                <div class="info">
+                    <span>Maggie Navaja***</span><br>
+                    <strong>1.00€</strong>
+                </div>
+            </label>
+            </label><label class="prod">
+                <input type="checkbox" value="Pegatina Burns joven" data-precio="1.00" class="check-prod" onchange="actualizarContador()">
+                <img src="img/peg/burns.webp" alt="Pegatina de Burns disfrazado de joven">
+                <div class="info">
+                    <span>Buens joven***</span><br>
+                    <strong>1.00€</strong>
+                </div>
+            </label>
+            </label><label class="prod">
+                <input type="checkbox" value="Pegatina Lobotomía Flanderil" data-precio="1.00" class="check-prod" onchange="actualizarContador()">
+                <img src="img/peg/lobotomia.webp" alt="Pegatina de Homer siendo obligado a convertirse en ned flanders">
+                <div class="info">
+                    <span>Lobotomía Flanderil</span><br>
+                    <strong>1.00€</strong>
+                </div>
+            </label>
+            </label><label class="prod">
+                <input type="checkbox" value="Pegatina Dignidad" data-precio="1.00" class="check-prod" onchange="actualizarContador()">
+                <img src="img/peg/dignidad.webp" alt="Pegatina de figura abstracta que representa la dignidad segun Kirk Van Houten">
+                <div class="info">
+                    <span>Dignidad</span><br>
+                    <strong>1.00€</strong>
+                </div>
+            </label>
+            </label><label class="prod">
+                <input type="checkbox" value="Pegatina Bort" data-precio="1.00" class="check-prod" onchange="actualizarContador()">
+                <img src="img/peg/bort.webp" alt="Pegatina de mattrícula con nombre Bort">
+                <div class="info">
+                    <span>¿Bort?</span><br>
+                    <strong>1.00€</strong>
+                </div>
+            </label>
+            </label><label class="prod">
+                <input type="checkbox" value="Pegatina Propiedad de Ned Flanders" data-precio="1.00" class="check-prod" onchange="actualizarContador()">
+                <img src="img/peg/flanders2.webp" alt="Pegatina de texto indicando que el objeto es propiedad de Ned Flanders">
+                <div class="info">
+                    <span>Propiedad de Ned Flanders</span><br>
+                    <strong>1.00€</strong>
+                </div>
+            </label>
+         </div>   
+    </section>
 
-
-
-
-
-
+    <section class="categoria">
+        <h2>Packs de Pegatinas</h2>
+        <div class="grid-productos">
 <!-- PACKS DE PEGATINAS ----------------------------------------------- -->
-            <h3>Packs de Pegatinas</h3>
-            <label class="prod">
-                <input type="checkbox" value="Pack pegatinas Panda Tope" data-precio="2.50€" class="check-prod">
+                        <label class="prod">
+                <input type="checkbox" value="Pack pegatinas Panda Tope" data-precio="2.50" class="check-prod" onchange="actualizarContador()">
                 <img src="img/pegatinas1/pegatina-pack-panda-tope.webp" alt="pack de cuatro pegatinas de Panda tope, banda formada por Bart Simpson, Milhouse, Nelson y Ralph">
                 <div class="info">
                     <span>Panda Tope</span><br>
@@ -233,14 +333,14 @@
                 </div>
             </label>
             <label class="prod">
-                <input type="checkbox" value="Pack pegatinas Pelucas" data-precio="2.50€" class="check-prod">
+                <input type="checkbox" value="Pack pegatinas Pelucas" data-precio="2.50" class="check-prod" onchange="actualizarContador()">
                 <img src="img/pegatinas1/pegatina-pelucas.webp" alt="pegatina de la escena de la serie en la que Bart, Milhouse, Nelson y Martin llevan pelucas de colores">
                 <div class="info">
                     <span>Pelucas</span><br>
                     <strong>2.50€</strong>
                 </div>
             </label><label class="prod">
-                <input type="checkbox" value="Pack pegatinas Homer y Marge" data-precio="1.50€" class="check-prod">
+                <input type="checkbox" value="Pack pegatinas Homer y Marge" data-precio="1.5€" class="check-prod" onchange="actualizarContador()">
                 <img src="img/pegatinas1/pegatina-pack-marge-homer.webp" alt="pegatina marge y homer bailando y comiendo en el coche">
                 <div class="info">
                     <span>Homer y Marge</span><br>
@@ -248,27 +348,22 @@
                 </div>
             </label>
             <label class="prod">
-                <input type="checkbox" value="Pack pegatinas Kang y Kodos" data-precio="1.50€" class="check-prod">
-                <img src="img/1.sm.webp">
+                <input type="checkbox" value="Pack pegatinas Kang y Kodos" data-precio="1.50" class="check-prod" onchange="actualizarContador()">
+                <img src="img/1.sm.webp" alt="Pack de pegatinas de Kang y Kodos, los alienígenas de la serie">
                 <div class="info">
                     <span>kang y Kodos</span><br>
                     <strong>1.50€</strong>
                 </div>
             </label>
 
-
-
-
         </div>
-
-
     </section>
 
     <section id="llaveros" class="categoria">
         <h2>Pins y Llaveros</h2>
         <div class="grid-productos">
             <label class="prod">
-                <input type="checkbox" value="llavero burns alien" data-precio="7.00€" class="check-prod">
+                <input type="checkbox" value="Llavero burns alien" data-precio="7.00" class="check-prod" onchange="actualizarContador()">
                 <img src="img/llaveros/llavero-sr-burns-alien.webp" alt="llavero que brilla en la oscuridad de la escena en la que el Sr. Burns se transforma en alienígena">
                 <div class="info">
                     <span>¡Os traigo amor!</span><br>
@@ -277,7 +372,7 @@
                 </div>
             </label>
             <label class="prod">
-                <input type="checkbox" value="llavero reina de los lagartos!" data-precio="7.00€" class="check-prod">
+                <input type="checkbox" value="Llavero reina de los lagartos!" data-precio="7.00" class="check-prod" onchange="actualizarContador()">
                 <img src="img/llaveros/llavero-lisa-soy-la-reina-de-los-lagartos.webp" alt="llavero de la escena en la que Lisa Simpson dice ser la Reina de los Lagartos">
                 <div class="info">
                     <span>¡La Reina de los Lagartos!</span><br>
@@ -287,7 +382,7 @@
             </label>
             
             <label class="prod">
-                <input type="checkbox" value="Llavero Maggie Spears" data-precio="5.00€" class="check-prod">
+                <input type="checkbox" value="Llavero Maggie Spears" data-precio="5.00" class="check-prod" onchange="actualizarContador()">
                 <img src="img/llaveros/llavero-maggie-bailando-britney-spears.webp" alt="llavero de la escena de la serie de los Simpsons en la que Maggie aparece bailando una canción de Britney Spears">
                 <div class="info">
                     <span>Maggie Spears</span><br>
@@ -295,7 +390,7 @@
                 </div>
             </label>
             <label class="prod">
-                <input type="checkbox" value="Llavero Homer novia" data-precio="5.00€" class="check-prod">
+                <input type="checkbox" value="Llavero Homer novia" data-precio="5.00" class="check-prod" onchange="actualizarContador()">
                 <img src="img/llaveros/llavero-homer-vestido-de-novia.webp" alt="llavero de la escena en la que Homer Simpson aparece vestido con el traje de bodas de Marge">
                 <div class="info">
                     <span>HOMER NOVIA</span><br>
@@ -304,7 +399,7 @@
             </label>
 
             <label class="prod">
-                <input type="checkbox" value="Llavero como si no llevara nada" data-precio="5.00€" class="check-prod">
+                <input type="checkbox" value="Llavero como si no llevara nada" data-precio="5.00" class="check-prod" onchange="actualizarContador()">
                 <img src="img/llaveros/llavero-flanders-como-si-no-llevara-nada.webp" alt="llavero de la escena de la serie en la que Flanders dice la frase como si no llevara nada en la nieve">
                 <div class="info">
                     <span>Como si no llevara nada...</span><br>
@@ -312,7 +407,7 @@
                 </div>
             </label>
             <label class="prod">
-                <input type="checkbox" value="Llavero Chu-chu-chuli" data-precio="5.00€" class="check-prod">
+                <input type="checkbox" value="Llavero Chu-chu-chuli" data-precio="5.00" class="check-prod" onchange="actualizarContador()">
                 <img src="img/llaveros/llavero-eres-muy-chu-chu-chuli.webp" alt="llavero de la escena de la tarjeta de san Valentín que da Lisa a Ralph Wiggum que dice eres muy chu chu chuli y tiene el dibujo de un tren">
                 <div class="info">
                     <span>Eres muy chu-chu-chuli!</span><br>
@@ -320,24 +415,174 @@
                 </div>
             </label>
             <label class="prod">
-                <input type="checkbox" value="Pin Venus de Gominola" data-precio="5.00€" class="check-prod">
+                <input type="checkbox" value="Pin Venus de Gominola" data-precio="5.00€" class="check-prod" onchange="actualizarContador()">
                 <img src="img/llaveros/pin-venus-de-milo-de-gominola.webp" alt="pin acrílico con imagen de la Venus de Milo de gominola que se pega al pantalón de una joven en el capítulo">
                 <div class="info">
                     <span>Venus de Gominola</span><br>
                     <strong>5.00€</strong>
                 </div>
             </label>
-
-
-
-
-
         </div>
+    </section>
 
+    <section id="laminas" class="categoria">
+        <h2>Láminas y tarjetas</h2>
+        <div class="grid-productos">
+            <label class="prod">
+                <input type="checkbox" value="Tarjeta Chu-chu-chuli" data-precio="5.00" class="check-prod" onchange="actualizarContador()">
+                <img src="img/llaveros/" alt="Tarjeta que Lisa le regala a Ralph por San Valentín">
+                <div class="info">
+                    <span>¡Eres muy chu-chu-chuli!</span><br>
+                    <span class="extra"><i class="fa-solid fa-star"></i> Tarjeta <i class="fa-solid fa-star"></i></span><br>
+                    <strong>5.00€</strong>
+                </div>
+            </label>
+            <label class="prod">
+                <input type="checkbox" value="Tarjeta je je, me quieres" data-precio="5.00" class="check-prod" onchange="actualizarContador()">
+                <img src="img/llaveros/" alt="llavero de la escena en la que Lisa Simpson dice ser la Reina de los Lagartos">
+                <div class="info">
+                    <span>Je je, me quieres</span><br>
+                    <span class="extra"><i class="fa-solid fa-star"></i> Tarjeta <i class="fa-solid fa-star"></i></span><br>
+                    <strong>5.00€</strong>
+                </div>
+            </label>
+            
+            <label class="prod">
+                <input type="checkbox" value="Lámina A5 Monorraíl" data-precio="5.00" class="check-prod" onchange="actualizarContador()">
+                <img src="img/llaveros/llavero-maggie-bailando-britney-spears.webp" alt="Lámina con ilustración vectorial del monorrail">
+                <div class="info">
+                    <span>Monorraíl</span><br>
+                    <strong>5.00€</strong>
+                </div>
+            </label>
+            <label class="prod">
+                <input type="checkbox" value="Lámina A5 Revienta Robots" data-precio="5.00" class="check-prod" onchange="actualizarContador()">
+                <img src="img/llaveros/llavero-homer-vestido-de-novia.webp" alt="Lámina estilo poster antiguo del concurso de batallas de robots">
+                <div class="info">
+                    <span>Revienta Robots</span><br>
+                    <strong>5.00€</strong>
+                </div>
+            </label>
 
+            <label class="prod">
+                <input type="checkbox" value="Lámina A5 El Resplandior" data-precio="5.00" class="check-prod" onchange="actualizarContador()">
+                <img src="img/llaveros/llavero-flanders-como-si-no-llevara-nada.webp" alt="Lámina con distintas escenas de la parodia de los Simpson de la película del Resplandor">
+                <div class="info">
+                    <span>El Resplandior</span><br>
+                    <strong>5.00€</strong>
+                </div>
+            </label>
+            <label class="prod">
+                <input type="checkbox" value="Lámina A5 Homers" data-precio="5.00" class="check-prod" onchange="actualizarContador()">
+                <img src="img/llaveros/llavero-eres-muy-chu-chu-chuli.webp" alt="Lámiina con varios Homers con distintos atuendos de momentos icónicos de la serie">
+                <div class="info">
+                    <span>Homers</span><br>
+                    <strong>5.00€</strong>
+                </div>
+            </label>
+        </div>
+    </section>
+
+    <section id="textil" class="categoria">
+        <h2>Tote bags</h2>
+        <div class="grid-productos">
+            <label class="prod">
+                <input type="checkbox" value="Tote Chu-chu-chuli" data-precio="10.00" class="check-prod" onchange="actualizarContador()">
+                <img src="img/llaveros/" alt="Tote con diseño de la tarjeta que Lisa le regala a Ralph por San Valentín">
+                <div class="info">
+                    <span>¡Eres muy chu-chu-chuli!</span><br>
+                    <strong>10.00€</strong>
+                </div>
+            </label>
+            <label class="prod">
+                <input type="checkbox" value="Tote Como si no llevara nada" data-precio="10.00" class="check-prod" onchange="actualizarContador()">
+                <img src="img/llaveros/" alt="Tote con diseño de Flanders en la nieve">
+                <div class="info">
+                    <span>Como si no llevara nada...</span><br>
+                    <strong>10.00€</strong>
+                </div>
+            </label>
+            <label class="prod">
+                <input type="checkbox" value="Tote Pelucas" data-precio="10.00" class="check-prod" onchange="actualizarContador()">
+                <img src="img/llaveros/" alt="Tote con diseño Bart y amigos con pelucas de colores">
+                <div class="info">
+                    <span>Pelucas***</span><br>
+                    <strong>10.00€</strong>
+                </div>
+            </label>
+            <label class="prod">
+                <input type="checkbox" value="Tote Lisa" data-precio="10.00" class="check-prod" onchange="actualizarContador()">
+                <img src="img/llaveros/" alt="Tote con diseño de Lisa Simpson con distintos outfits">
+                <div class="info">
+                    <span>Lisa Simpson</span><br>
+                    <strong>10.00€</strong>
+                </div>
+            </label>
+            <label class="prod">
+                <input type="checkbox" value="Tote Dragones" data-precio="10.00" class="check-prod" onchange="actualizarContador()">
+                <img src="img/llaveros/" alt="Tote con diseño de los dragones que lloran cuando los simpson viajan a china">
+                <div class="info">
+                    <span>Dragón de corazón roto</span><br>
+                    <strong>10.00€</strong>
+                </div>
+            </label>
+            <label class="prod">
+                <input type="checkbox" value="Tote Homers" data-precio="10.00" class="check-prod" onchange="actualizarContador()">
+                <img src="img/llaveros/" alt="Tote con diseño de Homer con distintos outfits de la serie">
+                <div class="info">
+                    <span>Homers</span><br>
+                    <strong>10.00€</strong>
+                </div>
+            </label>
+            <label class="prod">
+                <input type="checkbox" value="Tote Mr. Croket" data-precio="10.00" class="check-prod" onchange="actualizarContador()">
+                <img src="img/llaveros/" alt="Tote con diseño de Mister croket">
+                <div class="info">
+                    <span>Mr. Croquet</span><br>
+                    <strong>10.00€</strong>
+                </div>
+            </label>
+            <label class="prod">
+                <input type="checkbox" value="Tote Resplandior" data-precio="10.00" class="check-prod" onchange="actualizarContador()">
+                <img src="img/llaveros/" alt="Tote con diseño de Homer parodiando el resplandor">
+                <div class="info">
+                    <span>El Resplandior</span><br>
+                    <strong>10.00€</strong>
+                </div>
+            </label>
+        </div>
+    </section>
+
+        <section class="categoria">
+        <h2>Camisetas</h2>
+        <div class="grid-productos">
+            <label class="prod">
+                <input type="checkbox" value="Tote Chu-chu-chuli" data-precio="10.00" class="check-prod" onchange="actualizarContador()">
+                <img src="img/llaveros/" alt="Tote con diseño de la tarjeta que Lisa le regala a Ralph por San Valentín">
+                <div class="info">
+                    <span>¡Eres muy chu-chu-chuli!</span><br>
+                    <strong>20.00€</strong>
+                </div>
+            </label>
+           
+        </div>
     </section>
 
 
+    <div class="disclaimer">
+        <ul>
+            <li>Las camisetas sólo estan disponibles para reserva.<br>
+            El envío va incluido en el precio.</li>
+            <li>Los productos sólo se reservarán durante un día.<br>
+            Si al final del día no se ha recogido el pedido, se cancelará la reserva (salvo indicado al momento de la reserva).</li>
+            <li>Se puede realizar el pago de los productos mediante Bizum.</li>
+        </ul>
+    </div>
+
+    <div class="redes">
+        <p><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></p>
+        <p><a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a></p>
+    </div>
 
 
 
@@ -345,8 +590,17 @@
         <span><a href="#top"><i class="fa-solid fa-arrow-up"></i></a></span>
     </div>
 
-    <div class="whatsapp">
+    <!-- <div class="whatsapp">
         <p><a href="javascript:void(0)" onclick="enviarPedidoWhatsApp()" class="enlace-whatsapp"><i class="fa-brands fa-whatsapp"></i> Enviar selección</a></p>
+    </div> -->
+
+    <div id="btn-whatsapp" class="whatsapp" onclick="enviarPedidoWhatsApp()" style="display:none; cursor:pointer;">
+        <p class="enlace-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>&nbsp;Enviar selección 
+            <span id="resumen-flotante">
+                <span id="cant-items">0</span> - <span id="precio-total">0.00</span>€
+            </span>
+        </p>
     </div>
 
 

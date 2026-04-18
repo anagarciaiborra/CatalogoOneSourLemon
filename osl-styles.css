@@ -5,7 +5,7 @@
 }
 
 html{
-    scroll-padding-top: 20px;
+    scroll-padding-top: 70px;
     scroll-behavior: smooth !important;
     overflow-x: hidden; /* Prohibido el scroll horizontal en la raíz */
     width: 100%;
@@ -47,7 +47,7 @@ header {
 }
 
 header img {
-    max-width: 150px; 
+    max-width: 200px; 
     width: 80%;      
     height: auto;
     padding-top: 10px;
@@ -64,6 +64,7 @@ header img {
     z-index: 1000;
     margin: 0;
     padding: 0;
+    border-radius: 0 0 20px 20px;
 }
 
 nav ul{
@@ -104,11 +105,39 @@ nav ul li a:active{
 
 /* HERO ------------------------- */
 
+.hero{
+    margin-top: -80px;
+    margin-bottom: 50px;
+}
 
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.tres-col{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 20px;
+    flex-basis: 0;
+    background-color: #f6f1ca;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.col{
+    width:30%;
+    text-align: center;
+}
+
+.tres-col h2{
+    font-size: 1.7rem;
+    margin-bottom: 0;
+}
 
 /* PRODUCTOS --------------------------- */
 
-h2{
+h2, h3{
     text-align: center;
     text-transform: uppercase;
 }
@@ -173,17 +202,86 @@ strong{
 
 
 
+#btn-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--negro);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+#resumen-flotante {
+    background-color: var(--osl); /* Tu color amarillo */
+    color: var(--negro);
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+/* EXTRAS ABAJO ------------------------------------- */
+
+.disclaimer{
+    font-size: 0.85rem;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.disclaimer ul{
+    padding:0;
+    list-style-type: none;
+}
+
+.disclaimer li{
+    padding-bottom: 5px;
+}
+
+
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 60px;
+    padding-top: 12px;
+    background-color: var(--negro);
+    border-radius: 20px 20px 0 0 ;
+}
+
+.redes a{
+    font-size: 2rem;
+    color: var(--blanco);
+}
+
+.redes a:hover{
+    color: var(--osl);
+}
+
 
 /* BOTONES ABAJO PANTALLA ------------------------------------------ */
 .arriba{
     background-color: var(--negro);
     color:var(--blanco);
-    padding: 10px;
+    height: 50px;
+    width: 50px;
     position: fixed;
     bottom: 20px;
     right: 30px;
     z-index: 1000;
-    border-radius: 10px;
+    border-radius: 50px;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -200,7 +298,7 @@ strong{
     color:var(--osl);
 }
 
-.whatsapp{
+/* .whatsapp{
     background-color: var(--negro);
     color:var(--blanco);
     height:2.2rem;
@@ -213,6 +311,63 @@ strong{
     justify-self: center;
     border-radius: 10px;
     margin:auto;
+} */
+
+
+@keyframes subir {
+    from { opacity: 0; transform: translate(-50%, 50px); }
+    to { opacity: 1; transform: translate(-50%, 0); }
+}
+
+@keyframes bajar {
+    from { opacity: 1; transform: translate(-50%, 0); }
+    to { opacity: 0; transform: translate(-50%, 50px); }
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height:70px !important;
+    background-color: var(--negro);
+    border-radius: 25px 25px 0 0 !important;
+    padding: 15px !important;
+    margin-bottom: -20px !important;
+    z-index: 2000;
+    display: none; /* Se activa por JS */
+    align-items: center;
+    white-space: nowrap;
+}
+
+#btn-whatsapp.show {
+    display: flex !important; /* Cambiamos a flex para que sea visible */
+    animation: subir 0.4s ease-out forwards;
+}
+
+/* Clase que aplicaremos con JS para que salga */
+#btn-whatsapp.hide {
+    display: flex !important;
+    animation: bajar 0.4s ease-in forwards;
+}
+
+#resumen-flotante {
+    margin-left: 10px;
+    background-color: #FBE017; /* Tu variable --osl */
+    color: #000;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.enlace-whatsapp {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
 }
 
  /* AGOTADO ---------------------------------- */
