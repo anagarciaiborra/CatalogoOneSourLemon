@@ -400,6 +400,21 @@ strong{
 
 
 
+/* EXTRA IMAGENES ------------------------------------ */
+
+.up{
+    object-position: 80% 25%;
+}
+
+.cami{
+    object-position: 87%;
+    size: 150%;
+}
+
+.cami-lisa{
+    object-position: 13%;
+}
+
 
 /* RESPONSIVE ------------------------------------------------------------- */
 
